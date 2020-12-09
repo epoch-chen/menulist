@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { getAllTask } from "@/api/system.js";
+import { getAllKettask } from "@/api/system.js";
 
 export default {
   name: "Home",
@@ -66,7 +66,7 @@ export default {
     // 获取初始树形结构数据
     _getTreeListData() {
       // 调用接口 getAllTask
-      getAllTask.then((res) => {
+      getAllKettask.then((res) => {
         // 状态码200，请求成功
         if (res.status === 200) {
           // 处理返回数据
